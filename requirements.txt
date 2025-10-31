@@ -1,28 +1,14 @@
-# Intentionally using older versions with known vulnerabilities for security testing
-
-# Flask with known vulnerabilities (CVE-2023-30861)
-Flask==2.2.2
-Werkzeug==2.2.2
-
-# Requests library - using older version
-requests==2.25.1
-
-# Intentionally vulnerable packages for testing security scans
-urllib3==1.26.5  # Has known vulnerabilities
-certifi==2021.5.30  # Outdated certificate bundle
-
-# Jinja2 with known template injection vulnerabilities
-Jinja2==3.0.1
-
-# Additional dependencies
-click==8.0.1
-itsdangerous==2.0.1
-MarkupSafe==2.0.1
-charset-normalizer==2.0.4
-idna==3.2
-
-# Cryptography with known vulnerabilities
-cryptography==3.3.2
-
-# PyYAML with known deserialization vulnerability (CVE-2020-14343)
-PyYAML==5.3.1
+# Core dependencies - let pip resolve versions
+Flask
+Werkzeug
+requests
+urllib3
+certifi
+Jinja2
+click
+itsdangerous
+MarkupSafe
+charset-normalizer
+idna
+cryptography
+PyYAML
